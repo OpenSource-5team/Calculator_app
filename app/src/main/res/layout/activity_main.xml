@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4169E1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:text="계산기 모음"
+            android:fontFamily="@font/baebalsmingok"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/map_et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"
+                android:gravity="center"
+                android:textSize="28dp"
+                android:text="원하는 계산기를 선택해 주세요."
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/baebalsmingok"/>
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/map_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_calculator1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="#87CEFA"
+            android:fontFamily="@font/baebalsmingok"
+            android:text="일반 계산기"
+            android:textSize="30dp"
+            app:backgroundTint="@color/skyblue" />
+
+        <Button
+            android:id="@+id/btn_calculator2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="#87CEFA"
+            android:fontFamily="@font/baebalsmingok"
+            android:text="비만도 계산기"
+            android:textSize="27dp"
+            app:backgroundTint="@color/skyblue" />
+
+        <Button
+            android:id="@+id/btn_calculator3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="@color/skyblue"
+            android:fontFamily="@font/baebalsmingok"
+            android:text="연봉 계산기"
+            android:textSize="30dp"
+            app:backgroundTint="@color/skyblue" />
+
+        <Button
+            android:id="@+id/btn_calculator4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="@color/skyblue"
+            android:fontFamily="@font/baebalsmingok"
+            android:text="할인 계산기"
+            android:textSize="30dp"
+            app:backgroundTint="@color/skyblue" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SplashActivity">
+        <TextView
+            android:id="@+id/text_splash"
+            android:fontFamily="@font/baebalsmingok"
+            android:textSize="70dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무엇이든" />
+        <TextView
+            android:id="@+id/text_Splash2"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baebalsmingok"
+            android:textSize="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물어보셈~" />
+    </LinearLayout>
+
+
