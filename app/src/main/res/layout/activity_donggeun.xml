@@ -7,4 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".donggeunActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="216dp"
+      android:layout_marginLeft="216dp"
+      android:text="dssTextView"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="138dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
