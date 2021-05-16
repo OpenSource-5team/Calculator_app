@@ -15,5 +15,6 @@
       android:layout_marginLeft="216dp"
       android:text="dssTextView"
       app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="138dp" />
+      tools:layout_editor_absoluteY="138dp"
+      tools:text="가나다" />
 </androidx.constraintlayout.widget.ConstraintLayout>
