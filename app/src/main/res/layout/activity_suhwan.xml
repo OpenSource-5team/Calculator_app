@@ -4,6 +4,191 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".suhwanActivity">
+    tools:context=".suhwanActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:layout_editor_absoluteY="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+
+        >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/baebalsmingok"
+                android:text="무엇이든 물어보셈"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+
+                android:fontFamily="@font/baebalsmingok"
+                android:gravity="center"
+                android:text="연봉 계산기"
+                android:textColor="@android:color/black"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/baebalsmingok"
+                android:text="연봉"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/SalaryEditText"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="원"
+                android:textColorHint="#032149"
+                android:gravity="right"
+                android:fontFamily="@font/baebalsmingok"/>
+
+        </TableRow>
+
+       <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="60dp"
+               android:fontFamily="@font/baebalsmingok"
+               android:text="비과세액"
+               android:textColor="@android:color/black"
+               android:textSize="24sp" />
+
+           <TextView
+               android:id="@+id/SalaryTextView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:ems="15"
+               android:fontFamily="@font/baebalsmingok"
+               android:gravity="center"
+               android:inputType="number"
+               android:text="100,000원"
+               android:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/baebalsmingok"
+                android:text="부양가족수"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/SalaryEditText2"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:fontFamily="@font/baebalsmingok"
+                android:hint="명"
+                android:textColorHint="#032149"
+                android:gravity="right"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/baebalsmingok"
+                android:text="20세↓자녀수"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/SalaryEditText3"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:fontFamily="@font/baebalsmingok"
+                android:hint="명"
+                android:textColorHint="#032149"
+                android:gravity="right"/>
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="급여 계산"
+                android:fontFamily="@font/baebalsmingok"
+                android:textSize="24sp"
+                android:background="@drawable/btn_style"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
