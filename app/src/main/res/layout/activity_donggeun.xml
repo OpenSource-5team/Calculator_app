@@ -17,4 +17,13 @@
       app:layout_constraintStart_toStartOf="parent"
       tools:layout_editor_absoluteY="138dp"
       tools:text="가나다" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="TextView"
+      tools:layout_editor_absoluteX="116dp"
+      tools:layout_editor_absoluteY="256dp"
+      tools:text="가나다라" />
 </androidx.constraintlayout.widget.ConstraintLayout>
