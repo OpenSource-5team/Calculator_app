@@ -2,6 +2,7 @@ package com.N5_team.Calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -51,6 +52,15 @@ public class BmiResultActivty extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        Button btn2 = (Button) findViewById(R.id.bmi_web);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "더 알아보기가 눌러졌습니다.", Toast.LENGTH_LONG).show();
+                Uri uri = Uri.parse("https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/bmiCalcurator.do?menu_no=3071&menu_grp=MENU_NEW03");
+                Intent intent  = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        });
     }
 }
