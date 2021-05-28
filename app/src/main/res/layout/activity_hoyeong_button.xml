@@ -26,7 +26,7 @@
 
         <TableRow>
 
-            <EditText
+            <TextView
                 android:id="@+id/ed1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -84,7 +84,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:onClick="onMinusButtonClicked"
                 android:text="-" />
 
 
@@ -118,12 +117,11 @@
                 android:text="6" />
 
             <Button
-                android:id="@+id/btn_pls"
+                android:id="@+id/btn_plus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:onClick="onPlusButtonClicked"
                 android:text="+" />
 
 
@@ -162,7 +160,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:onClick="onMultipleButtonClicked"
                 android:text="*" />
 
 
@@ -201,11 +198,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:onClick="onSlushButtonClicked"
                 android:text="/" />
 
 
         </TableRow>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="onbackclick"
+            android:layout_weight="1"
+            android:text="직접입력화면" />
 
 
     </TableLayout>

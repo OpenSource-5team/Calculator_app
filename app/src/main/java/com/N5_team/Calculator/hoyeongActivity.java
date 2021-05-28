@@ -1,23 +1,20 @@
 package com.N5_team.Calculator;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class hoyeongActivity extends AppCompatActivity {
 
 
-    Button clear_button,result_button;
+    Button clear_button,result_button,change;
     EditText edit1,edit2,edit3;
     ImageView imagebutton1;
 
@@ -28,6 +25,7 @@ public class hoyeongActivity extends AppCompatActivity {
 
         clear_button = (Button)findViewById(R.id.clear_button);
         result_button = (Button)findViewById(R.id.result_button);
+        change = (Button)findViewById(R.id.change);
 
         edit1 = (EditText)findViewById(R.id.edit1);
         edit2 = (EditText)findViewById(R.id.edit2);
@@ -40,6 +38,7 @@ public class hoyeongActivity extends AppCompatActivity {
             public void onClick(View v) {
                 edit1.setText("");
                 edit2.setText("");
+                edit3.setText("");
             }
         });
 
@@ -59,11 +58,19 @@ public class hoyeongActivity extends AppCompatActivity {
         String tmpEt1 = edit1.getText().toString();
         String tmpEt2 = edit2.getText().toString();
 
-        int int_edit1 = Integer.parseInt(tmpEt1);
-        int int_edit2 = Integer.parseInt(tmpEt2);
+        double double_edit1 = Integer.parseInt(tmpEt1);
+        double double_edit2 = Integer.parseInt(tmpEt2);
 
-        int result = int_edit1 - (int_edit1 / int_edit2) ;
-        String str_result = Integer.toString(result);
+        double_edit2 = double_edit2 / 100;
+
+
+        double result = double_edit1 - (double_edit1 * double_edit2) ;
+        String str_result = Integer.toString((int) result);
         edit3.setText(str_result);
+    }
+
+    public void onchangeclick(View view) {
+        Intent intent = new Intent(this, hoyeongActivity_button.class);
+        startActivity(intent);
     }
 }
