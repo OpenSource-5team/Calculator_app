@@ -1,46 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hoyeongActivity">
+    android:orientation="vertical"
+    tools:context=".hoyeongActivity"
+    >
 
-    <FrameLayout
-        android:id="@+id/frame"
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/imagebutton1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/ic_launcher_foreground"
+                />
+
+        </TableRow>
 
 
+        <TableRow
+            android:paddingTop="100dp">
 
-    </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="↓↓가격을 입력하세요↓↓"
+                android:textColor="#000000"
+                android:textSize="35dp">
 
-    <LinearLayout
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="진행중상황"
+                android:textSize="50dp"
+                android:layout_weight="2"
+                android:inputType="number"
+                android:gravity="center"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/edit2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="할인율을 입력하세요(%)"
+        android:inputType="number" />
 
-        <Button
-            android:id="@+id/btn_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="직접입력"/>
-
-        <Button
-            android:id="@+id/btn_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="버튼입력"/>
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="#ffffff">
 
 
+    </Button>
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDivButtonClicked"
+        android:text="result"
+        android:textColor="#ffffff">
+
+
+    </Button>
+
+    <EditText
+        android:id="@+id/edit3"
+        android:paddingTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:hint="결과가 출력됩니다."
+        android:inputType="number" />
 
 
 
-    </LinearLayout>
 
 
 
-
-</RelativeLayout>
+</LinearLayout>
