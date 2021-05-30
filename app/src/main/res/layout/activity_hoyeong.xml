@@ -20,7 +20,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:src="@drawable/ic_launcher_foreground"
+                android:src="@drawable/image"
                 />
 
         </TableRow>
@@ -107,16 +107,9 @@
 
     <Button
         android:id="@+id/change"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:text="버튼계산기화면"
-        android:onClick="onchangeclick"
         android:gravity="center"/>
-
-
-
-
-
-
 
 </LinearLayout>

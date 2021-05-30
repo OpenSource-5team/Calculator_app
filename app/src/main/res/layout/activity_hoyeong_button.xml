@@ -20,7 +20,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:src="@drawable/ic_launcher_foreground" />
+                android:src="@drawable/image" />
 
         </TableRow>
 
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_weight="1"
-                android:gravity="center"
+                android:gravity="right"
                 android:hint="진행중상황"
                 android:textSize="30dp" />
 
@@ -45,6 +45,7 @@
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="결과"
                 android:textSize="30dp" />
 
@@ -208,12 +209,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
-            android:onClick="onbackclick"
             android:layout_weight="1"
             android:text="직접입력화면" />
 
 
     </TableLayout>
+
 
 
 </LinearLayout>
