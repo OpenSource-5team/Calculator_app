@@ -82,7 +82,7 @@
       android:textColor="#03A9F4"
       android:textSize="27sp"
       android:textStyle="bold"
-      app:backgroundTint="#E8ECED"
+      app:backgroundTint="#FFFFFF"
       app:layout_constraintBottom_toTopOf="@+id/num_8_button"
       app:layout_constraintEnd_toStartOf="@+id/backspace_button"
       app:layout_constraintHorizontal_bias="0.5"
