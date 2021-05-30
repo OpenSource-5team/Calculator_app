@@ -1,5 +1,6 @@
 package com.N5_team.Calculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,24 +12,42 @@ import android.view.View.OnClickListener;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 
 
 public class hoyeongActivity_button extends AppCompatActivity {
 
+
     private Button btn_back,btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn_minus,btn_plus,btn_multiple,btn_slush,btn_result,btn_clear;
     private TextView ed1;
     private EditText ed2;
     private ImageView imagebutton1;
-
     private int a;
     private int where=0;
+
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoyeong_button);
+
+        btn_back = (Button)findViewById(R.id.btn_back);
+
+        btn_back.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
+        imagebutton1 = (ImageView)findViewById(R.id.imagebutton1);
 
         imagebutton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,10 +56,9 @@ public class hoyeongActivity_button extends AppCompatActivity {
             }
         });
 
+
         ed1 = (TextView)findViewById(R.id.ed1);
         ed2 = (EditText) findViewById(R.id.ed2);
-        imagebutton1 = (ImageView)findViewById(R.id.imagebutton1);
-        btn_back = (Button)findViewById(R.id.btn_back);
         btn0 = (Button)findViewById(R.id.btn0);
         btn1 = (Button)findViewById(R.id.btn1);
         btn2 = (Button)findViewById(R.id.btn2);
@@ -59,58 +77,59 @@ public class hoyeongActivity_button extends AppCompatActivity {
         btn_slush = (Button)findViewById(R.id.btn_slush);
         btn_clear = (Button)findViewById(R.id.btn_clear);
 
+
         OnClickListener cl = new OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 if(v==btn1){
-                    ed2.setText(ed2.getText().toString() + 1);
+                    ed1.setText(ed1.getText().toString()+1);
                 }
                 else if (v==btn2){
-                    ed2.setText(ed2.getText().toString()+2);
+                    ed1.setText(ed1.getText().toString()+2);
                 }
                 else if (v==btn3){
-                    ed2.setText(ed2.getText().toString()+3);
+                    ed1.setText(ed1.getText().toString()+3);
                 }
                 else if (v==btn4){
-                    ed2.setText(ed2.getText().toString()+4);
+                    ed1.setText(ed1.getText().toString()+4);
                 }
                 else if (v==btn5){
-                    ed2.setText(ed2.getText().toString()+5);
+                    ed1.setText(ed1.getText().toString()+5);
                 }
                 else if (v==btn6){
-                    ed2.setText(ed2.getText().toString()+6);
+                    ed1.setText(ed1.getText().toString()+6);
                 }
                 else if (v==btn7){
-                    ed2.setText(ed2.getText().toString()+7);
+                    ed1.setText(ed1.getText().toString()+7);
                 }
                 else if (v==btn8){
-                    ed2.setText(ed2.getText().toString()+8);
+                    ed1.setText(ed1.getText().toString()+8);
                 }
                 else if (v==btn9){
-                    ed2.setText(ed2.getText().toString()+9);
+                    ed1.setText(ed1.getText().toString()+9);
                 }
                 else if (v==btn0){
-                    ed2.setText(ed2.getText().toString()+0);
+                    ed1.setText(ed1.getText().toString()+0);
                 }
                 else if (v==btn_plus){
-                    a = Integer.valueOf(ed2.getText().toString().trim());
-                    ed2.setText("");
+                    a = Integer.valueOf(ed1.getText().toString().trim());
+                    ed1.setText("");
                     where=1;
                 }
                 else if (v==btn_minus){
-                    a = Integer.valueOf(ed2.getText().toString().trim());
-                    ed2.setText("");
+                    a = Integer.valueOf(ed1.getText().toString().trim());
+                    ed1.setText("");
                     where = 2;
                 }
                 else if (v==btn_multiple){
-                    a = Integer.valueOf(ed2.getText().toString().trim());
-                    ed2.setText("");
+                    a = Integer.valueOf(ed1.getText().toString().trim());
+                    ed1.setText("");
                     where = 3;
                 }
                 else if (v==btn_slush){
-                    a = Integer.valueOf(ed2.getText().toString().trim());
-                    ed2.setText("");
+                    a = a / Integer.valueOf(ed1.getText().toString().trim());
+                    ed1.setText("");
                     where = 4;
                 }
 
@@ -118,27 +137,28 @@ public class hoyeongActivity_button extends AppCompatActivity {
                 //결과
                 else if (v == btn_result) {
                     if (where == 1) {
-                        a = a + Integer.valueOf(ed2.getText().toString().trim());
+                        a = a + Integer.valueOf(ed1.getText().toString().trim());
                         ed2.setText(Integer.toString(a));
                     }
 
                     else if (where == 2) {
-                        a = a - Integer.valueOf(ed2.getText().toString().trim());
+                        a = a - Integer.valueOf(ed1.getText().toString().trim());
                         ed2.setText(Integer.toString(a));
                     }
 
                     else if (where == 3) {
-                        a = a * Integer.valueOf(ed2.getText().toString().trim());
+                        a = a * Integer.valueOf(ed1.getText().toString().trim());
                         ed2.setText(Integer.toString(a));
                     }
 
                     else if (where == 4) {
-                        a = a / Integer.valueOf(ed2.getText().toString().trim());
+                        a = a / Integer.valueOf(ed1.getText().toString().trim());
                         ed2.setText(Integer.toString(a));
                     }
                 }
 
                 else if (v==btn_clear){
+                    ed1.setText("");
                     ed2.setText("");
                 }
 
@@ -168,9 +188,8 @@ public class hoyeongActivity_button extends AppCompatActivity {
 
     }
 
-    public void onbackclick(View view) {
-        finish();
-    }
+
+
 }
 
 

@@ -25,11 +25,21 @@ public class hoyeongActivity extends AppCompatActivity {
 
         clear_button = (Button)findViewById(R.id.clear_button);
         result_button = (Button)findViewById(R.id.result_button);
-        change = (Button)findViewById(R.id.change);
 
         edit1 = (EditText)findViewById(R.id.edit1);
         edit2 = (EditText)findViewById(R.id.edit2);
         edit3 = (EditText)findViewById(R.id.edit3);
+
+
+        change = (Button)findViewById(R.id.change);
+        change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), hoyeongActivity_button.class);
+                startActivity(intent);
+
+            }
+        });
 
 
 
@@ -67,10 +77,8 @@ public class hoyeongActivity extends AppCompatActivity {
         double result = double_edit1 - (double_edit1 * double_edit2) ;
         String str_result = Integer.toString((int) result);
         edit3.setText(str_result);
+
     }
 
-    public void onchangeclick(View view) {
-        Intent intent = new Intent(this, hoyeongActivity_button.class);
-        startActivity(intent);
-    }
+
 }
