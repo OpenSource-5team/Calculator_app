@@ -17,18 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="59dp"
 
-        >
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/baebalsmingok"
-                android:text="무엇이든 물어보셈"
-                android:textColor="@color/white"
-                android:textSize="32dp" />
-        </RelativeLayout>
+        />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -191,19 +180,4 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/asdf"
-        android:layout_width="325dp"
-        android:layout_height="132dp"
-        android:text="asdf"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="150dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="241dp"
-        android:layout_height="156dp"
-        android:text="hello"
-        tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="400dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
