@@ -79,15 +79,15 @@
 
         <Button
             android:id="@+id/btn_calculator2"
-            android:layout_width="189dp"
-            android:layout_height="69dp"
+            android:layout_width="191dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/btn_style"
             android:backgroundTint="#87CEFA"
             android:fontFamily="@font/baebalsmingok"
             android:text="비만도 계산기"
-            android:textSize="27dp"
+            android:textSize="26dp"
             app:backgroundTint="@color/skyblue" />
 
         <Button
