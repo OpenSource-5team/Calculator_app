@@ -66,7 +66,7 @@
 
         <Button
             android:id="@+id/btn_calculator1"
-            android:layout_width="200dp"
+            android:layout_width="191dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="90dp"
@@ -79,20 +79,20 @@
 
         <Button
             android:id="@+id/btn_calculator2"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_width="191dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/btn_style"
             android:backgroundTint="#87CEFA"
             android:fontFamily="@font/baebalsmingok"
             android:text="비만도 계산기"
-            android:textSize="27dp"
+            android:textSize="26dp"
             app:backgroundTint="@color/skyblue" />
 
         <Button
             android:id="@+id/btn_calculator3"
-            android:layout_width="200dp"
+            android:layout_width="187dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="15dp"
@@ -105,7 +105,7 @@
 
         <Button
             android:id="@+id/btn_calculator4"
-            android:layout_width="200dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="15dp"
