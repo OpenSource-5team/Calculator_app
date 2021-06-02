@@ -11,9 +11,11 @@
         android:theme="@style/Theme.무엇이든물어보셈" >
         <activity android:name=".donggeunActivity" >
         </activity>
+        <activity android:name=".BmiResultActivty"/>
         <activity android:name=".hojinActivity" />
         <activity android:name=".suhwanActivity" />
         <activity android:name=".hoyeongActivity" />
+        <activity android:name=".hoyeongActivity_button"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity" >
             <intent-filter>
