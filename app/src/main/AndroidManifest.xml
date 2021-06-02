@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_calculator"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_calculator_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.무엇이든물어보셈" >
         <activity android:name=".donggeunActivity" >
@@ -15,7 +15,6 @@
         <activity android:name=".hojinActivity" />
         <activity android:name=".suhwanActivity" />
         <activity android:name=".hoyeongActivity" />
-        <activity android:name=".hoyeongActivity_button"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity" >
             <intent-filter>

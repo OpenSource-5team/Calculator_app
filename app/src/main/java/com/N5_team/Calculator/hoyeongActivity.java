@@ -33,16 +33,6 @@ public class hoyeongActivity extends AppCompatActivity {
         edit3 = (EditText)findViewById(R.id.edit3);
 
 
-        change = (Button)findViewById(R.id.change);
-        change.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), hoyeongActivity_button.class);
-                startActivity(intent);
-
-            }
-        });
-
 
 
         clear_button.setOnClickListener(new View.OnClickListener() {
