@@ -14,6 +14,7 @@
         <activity android:name=".hojinActivity" />
         <activity android:name=".suhwanActivity" />
         <activity android:name=".hoyeongActivity" />
+        <activity android:name=".hoyeongActivity_button" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
@@ -24,7 +25,6 @@
 
 
         </activity>
-        <activity android:name=".hoyeongActivity_button" />
 
     </application>
 
