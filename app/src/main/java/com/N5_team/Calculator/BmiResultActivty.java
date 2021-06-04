@@ -39,7 +39,7 @@ public class BmiResultActivty extends AppCompatActivity {
             textView3.setText("  정상");
         } else if (23 <= to && to < 25) {
             textView3.setText("과체중");
-        } else if (25 < to) {
+        } else if (25 <= to) {
             textView3.setText("  비만");
         }
 
