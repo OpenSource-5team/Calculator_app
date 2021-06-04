@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.N5_team.Calculator.databinding.ActivityDonggeunBinding;
 
-public class donggeunActivity extends AppCompatActivity {
+public class DonggeunActivity extends AppCompatActivity {
 
     boolean isFirstInput = true;
     boolean isOperatorClick = false;

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class suhwanActivity extends AppCompatActivity {
+public class SuhwanActivity extends AppCompatActivity {
     private EditText SalaryEditText, SalaryEditText2, SalaryEditText3;
     private Button calculateSal;
 
@@ -28,7 +28,7 @@ public class suhwanActivity extends AppCompatActivity {
         calculateSal.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), suhwanActivity2.class);
+                Intent intent = new Intent(getApplicationContext(), SuhwanActivity2.class);
 
                 long AllSalary = Long.parseLong(SalaryEditText.getText().toString());
                 int family = Integer.parseInt(SalaryEditText2.getText().toString());

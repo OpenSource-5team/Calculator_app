@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class suhwanActivity2 extends AppCompatActivity {
+public class SuhwanActivity2 extends AppCompatActivity {
 
     private TextView text1, text2, text3, text4, text5, text6, text7, text8, text9;
 
@@ -384,7 +384,7 @@ public class suhwanActivity2 extends AppCompatActivity {
         buttonreturn1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(suhwanActivity2.this, suhwanActivity.class);
+                Intent intent = new Intent(SuhwanActivity2.this, SuhwanActivity.class);
                 startActivity(intent);
             }
         });
@@ -393,7 +393,7 @@ public class suhwanActivity2 extends AppCompatActivity {
         buttonhome1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(suhwanActivity2.this, MainActivity.class);
+                Intent intent = new Intent(SuhwanActivity2.this, MainActivity.class);
                 startActivity(intent);
             }
         });//

@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_calculator_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.무엇이든물어보셈" >
-        <activity android:name=".donggeunActivity" >
+        <activity android:name=".DonggeunActivity" >
         </activity>
         <activity android:name=".BmiResultActivty"/>
-        <activity android:name=".hojinActivity" />
-        <activity android:name=".suhwanActivity" />
-        <activity android:name=".hoyeongActivity" />
+        <activity android:name=".HojinActivity" />
+        <activity android:name=".SuhwanActivity" />
+        <activity android:name=".HoyeongActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity" >
             <intent-filter>
@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".suhwanActivity2" />
+        <activity android:name=".SuhwanActivity2" />
     </application>
 
 </manifest>

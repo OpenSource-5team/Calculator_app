@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".donggeunActivity">
+    tools:context=".DonggeunActivity">
 
   <TextView
       android:id="@+id/math_text_vew"

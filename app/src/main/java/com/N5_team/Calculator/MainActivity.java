@@ -2,7 +2,6 @@ package com.N5_team.Calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), donggeunActivity.class);
+                Intent intent = new Intent(getApplicationContext(), DonggeunActivity.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), hojinActivity.class);
+                Intent intent = new Intent(getApplicationContext(), HojinActivity.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), suhwanActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SuhwanActivity.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), hoyeongActivity.class);
+                Intent intent = new Intent(getApplicationContext(), HoyeongActivity.class);
                 startActivity(intent);
             }
         });

@@ -9,9 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.app.Activity;
 
-public class hojinActivity extends AppCompatActivity {
+public class HojinActivity extends AppCompatActivity {
     TextView Bmiresult;
     EditText Height;
     EditText Weight;
@@ -29,7 +28,7 @@ public class hojinActivity extends AppCompatActivity {
         Button button1=(Button) findViewById(R.id.button1);
         Button button2=(Button) findViewById(R.id.button2);
         button2.setVisibility(View.INVISIBLE); // 화면에 안보이게 한다.
-        Intent intent = new Intent(hojinActivity.this, BmiResultActivty.class);
+        Intent intent = new Intent(HojinActivity.this, BmiResultActivty.class);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

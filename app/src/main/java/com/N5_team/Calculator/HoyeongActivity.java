@@ -12,7 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class hoyeongActivity extends AppCompatActivity {
+public class HoyeongActivity extends AppCompatActivity {
 
 
     Button clear_button,result_button,change;
